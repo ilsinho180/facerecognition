@@ -11,7 +11,7 @@ import ParticlesBg from 'particles-bg'
 
 
 const returnClarifaiRequest=(imageUrl)=>{
-  const PAT = process.env.PATKEY;
+  const PAT = 'b7e2bae968de4b699fde4d6c1c0dca80';
   const USER_ID = 'xum8qd5t98nk';       
   const APP_ID = 'test';
   const MODEL_ID = 'face-detection';   
