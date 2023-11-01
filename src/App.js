@@ -132,7 +132,7 @@ onButtonSubmit=(event)=>{
     .then(response => response.json())
     .then(result => this.displayBox(this.calculateFaceLocation(result)))
     .catch(error => console.log('error', error))
-    fetch('http://localhost:3000/image', {
+    fetch('https://mybackend-us1y.onrender.com/image', {
       method: 'put',
       headers: {'Content-Type': 'application/json'},
       body:JSON.stringify({
