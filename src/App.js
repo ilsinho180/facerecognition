@@ -11,7 +11,7 @@ import ParticlesBg from 'particles-bg'
 
 
 const returnClarifaiRequest=(imageUrl)=>{
-  const PAT = process.env.PATKEY;
+  const PAT = '787a76e514d84588a67ea3d0ee24ff29';
   const USER_ID = 'xum8qd5t98nk';       
   const APP_ID = 'test';
   const MODEL_ID = 'face-detection';   
@@ -132,7 +132,7 @@ onButtonSubmit=(event)=>{
     .then(response => response.json())
     .then(result => this.displayBox(this.calculateFaceLocation(result)))
     .catch(error => console.log('error', error))
-    fetch('https://safe-hamlet-85595-6e8061f6b17b.herokuapp.com/image', {
+    fetch('http://localhost:3000//image', {
       method: 'put',
       headers: {'Content-Type': 'application/json'},
       body:JSON.stringify({
